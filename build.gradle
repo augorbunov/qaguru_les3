@@ -8,7 +8,8 @@ repositories {
 
 dependencies {
     testImplementation (
-            'org.junit.jupiter:junit-jupiter:5.9.1'
+            'org.junit.jupiter:junit-jupiter:5.9.1',
+            'com.codeborne:selenide:6.9.0'
     )
 }
 
