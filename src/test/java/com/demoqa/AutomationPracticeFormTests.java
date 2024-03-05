@@ -4,8 +4,6 @@ import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
-import java.io.File;
-
 import static com.codeborne.selenide.Condition.appear;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
@@ -74,7 +72,7 @@ public class AutomationPracticeFormTests {
         //$(".table-responsive").shouldHave(text("Name"),text("Surname"),
                // text("Maths"),text("Karnal"));
 
-        //check a separate rows
+        //check separate rows
         $(".table-responsive").$(byText("Student Name"))
                 .parent().shouldHave(text("Name Surname"));
         $(".table-responsive").$(byText("Student Email"))
