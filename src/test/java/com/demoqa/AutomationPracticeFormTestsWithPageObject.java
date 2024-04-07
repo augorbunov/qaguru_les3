@@ -1,20 +1,9 @@
 package com.demoqa;
 
-import com.codeborne.selenide.Configuration;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-import pages.RegistrationPage;
 
-public class AutomationPracticeFormTestsWithPajeObject {
-    @BeforeAll
-    static void setUp () {
-        Configuration.baseUrl = "https://demoqa.com";
-        //Configuration.holdBrowserOpen = true;
-        Configuration.browserSize = "1920x1080";
-        Configuration.pageLoadStrategy = "eager";
-    }
+public class AutomationPracticeFormTestsWithPageObject extends TestBase {
 
-    RegistrationPage registrationPage = new RegistrationPage();
     @Test
     //test filling all fields on the form
     void fillFullFormTest() {
